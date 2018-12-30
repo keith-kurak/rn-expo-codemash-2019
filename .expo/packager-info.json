@@ -1,8 +1,9 @@
 {
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 17386,
-  "expoServerNgrokUrl": "https://9i-s4w.llamaluvr.pittsburgh-techfest-example.exp.direct",
-  "packagerNgrokUrl": "https://packager.9i-s4w.llamaluvr.pittsburgh-techfest-example.exp.direct",
-  "ngrokPid": 17420
+  "packagerPid": 32241,
+  "expoServerNgrokUrl": "https://9i-s4w.nudge.rn-expo-codemash-2018.exp.direct",
+  "packagerNgrokUrl": "https://packager.9i-s4w.nudge.rn-expo-codemash-2018.exp.direct",
+  "ngrokPid": 32266,
+  "devToolsPort": 19002
 }

@@ -1,4 +1,4 @@
-import { createSwitchNavigator } from 'react-navigation';
+import { createSwitchNavigator, createAppContainer } from 'react-navigation';
 import LoginScreen from './LoginScreen';
 import MainStack from './main-stack';
 
@@ -12,4 +12,4 @@ const Storyboard = createSwitchNavigator(
   }
 );
 
-export default Storyboard;
+export default createAppContainer(Storyboard);

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { View, TextInput } from 'react-native';
+import { View, TextInput, Text } from 'react-native';
 import PropTypes from 'prop-types';
 import Styles from './styles';
 import FancyButton from './FancyButton';
 import { sizes, colors } from '../../config/common-styles';
 
 class LoginForm extends Component {
-
-  render () {
+  render() {
     const { onPressLogin, username, onChangeUsername, password, onChangePassword } = this.props;
     return (
       <View style={Styles.wrapper}>
@@ -43,6 +42,9 @@ class LoginForm extends Component {
           onSubmitEditing={onPressLogin}
         />
         <FancyButton title="Sign in" onPress={onPressLogin} />
+        <Text style={{ margin: 10, color: 'gray', textAlign: 'center' }}>
+          (This isn't a real login form. Just press the button!)
+        </Text>
       </View>
     );
   }
