@@ -1,0 +1,23 @@
+{
+  "extends": ["universe/native"],
+  "rules": {
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+    "global-require": "off",
+    "import/no-unresolved": ["error"],
+    "react/boolean-prop-naming": ["warn"],
+    "react/default-props-match-prop-types": ["warn"],
+    "react/no-unused-prop-types": ["warn"],
+    "react/prop-types": ["warn"],
+    "react/no-typos": ["warn"],
+    "react/no-array-index-key": ["warn"],
+    "react/jsx-no-undef": ["error"],
+    "no-var": "error",
+    "no-unused-vars": ["error", { "vars": "all", "args": "all" }]
+  },
+  "settings": {
+    "import/resolver": "react-native"
+  },
+  "env": {
+    "jest": true
+  }
+}

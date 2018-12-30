@@ -1,0 +1,1 @@
+The place for common styles, icons, constants, strings, and other things that aren't *really* code.

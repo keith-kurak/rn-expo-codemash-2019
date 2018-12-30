@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+      "HookyQR.jsdoctagcomplete",
+      "stevejpurves.cucumber",
+      "joelday.docthis",
+      "dbaeumer.vscode-eslint",
+      "Orta.vscode-jest",
+      "ms-vscode.node-debug2",
+      "rebornix.project-snippets",
+      "vsmobile.vscode-react-native",
+      "esbenp.prettier-vscode"
+  ]
+}

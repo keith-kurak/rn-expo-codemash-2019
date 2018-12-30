@@ -1,0 +1,23 @@
+{
+  "git.ignoreLimitWarning": true,
+  "editor.snippetSuggestions": "top",
+  "auto-close-tag.activationOnLanguage": [
+      "html",
+      "xml",
+      "php",
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+      "plaintext",
+      "markdown",
+      "razor",
+      "vue"
+  ],
+  "editor.tabSize": 2,
+  "eslint.enable": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "javascript.validate.enable": false,
+  "typescript.autoImportSuggestions.enabled": false
+}

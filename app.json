@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "pittsburgh-techfest-example",
+    "description": "No description",
+    "slug": "pittsburgh-techfest-exmaple",
+    "privacy": "unlisted",
+    "sdkVersion": "27.0.0",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "primaryColor": "#cccccc",
+    "icon": "https://d1wp6m56sqw74a.cloudfront.net/~assets/c9aa1be8a6a6fe81e20c3ac4106a2ebc",
+    "loading": {
+      "icon": "https://d1wp6m56sqw74a.cloudfront.net/~assets/c9aa1be8a6a6fe81e20c3ac4106a2ebc",
+      "hideExponentText": false
+    },
+    "packagerOpts": {
+      "assetExts": [
+        "ttf",
+        "mp4",
+        "otf",
+        "xml"
+      ]
+    },
+    "ios": {
+      "buildNumber": "1",
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "supportsTablet": false,
+      "bundleIdentifier": "com.keith.pittsburghtechfestexample"
+    },
+    "android": {
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "com.google.android.c2dm.permission.RECEIVE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "package": "com.keith.pittsburghtechfestexample"
+    }
+  }
+}
