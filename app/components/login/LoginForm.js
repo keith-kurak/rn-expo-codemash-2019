@@ -41,7 +41,7 @@ class LoginForm extends Component {
           returnKeyType="go"
           onSubmitEditing={onPressLogin}
         />
-        <FancyButton title="Sign in" onPress={onPressLogin} />
+        <FancyButton title="Nice iOS Button" onPress={onPressLogin} />
         <Text style={{ margin: 10, color: 'gray', textAlign: 'center' }}>
           (This isn't a real login form. Just press the button!)
         </Text>

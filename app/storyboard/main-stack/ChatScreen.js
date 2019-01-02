@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Alert } from 'react-native';
+import { View } from 'react-native';
 import Chat from '../../components/chat';
 import { LoadingWrapper } from '../../components/common';
 import { messageRepository } from '../../stores/instances';
