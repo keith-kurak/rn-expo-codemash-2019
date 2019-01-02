@@ -17,18 +17,18 @@ const MainTabs = createBottomTabNavigator(
 MainTabs.navigationOptions = ({ navigation }) => {
   const currentTabRoute = navigation.state.routes[navigation.state.index].routeName;
   if (currentTabRoute === 'inbox') {
-    return ({
-      title: 'Inbox'
-    });
+    return {
+      title: 'Inbox',
+    };
   }
   if (currentTabRoute === 'coolStuff') {
-    return ({
-      title: 'Cool Stuff'
-    });
+    return {
+      title: 'Cool Stuff',
+    };
   }
-  return ({
-    title: 'Settings'
-  })
-}
+  return {
+    title: 'Settings',
+  };
+};
 
 export default MainTabs;

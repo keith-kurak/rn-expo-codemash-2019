@@ -10,30 +10,36 @@ export default class InboxScreen extends Component {
     this.state = {
       inboxItems: [],
       isLoading: true,
-    }
+    };
   }
+  // ...
 
-  componentDidMount = () => {
+  // refresh on first load
+  componentDidMount() {
     this._refreshInbox();
   }
-  
+
   _refreshInbox = () => {
+    this.setState({ isLoading: true });
     messageRepository.getInboxItems().then(inboxItems => {
       this.setState({
         inboxItems,
         isLoading: false,
       });
     });
-  }
+  };
 
-  render () {
+  render() {
     return (
       <View style={{ flex: 1 }}>
         <Inbox
           messages={this.state.inboxItems}
           isLoading={this.state.isLoading}
           onRefresh={this._refreshInbox}
-          onPressMessage={(id) => this.props.navigation.navigate('chat', {messageId: id})}
+          onPressMessage={id => {
+            // push chat screen when message is tapped
+            this.props.navigation.navigate('chat', { messageId: id });
+          }}
         />
       </View>
     );

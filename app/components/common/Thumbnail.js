@@ -35,7 +35,7 @@ const Thumbnail = ({ diameter, name }) => {
       text={name}
     />
   );
-}
+};
 
 Thumbnail.propTypes = {
   diameter: PropTypes.number.isRequired,

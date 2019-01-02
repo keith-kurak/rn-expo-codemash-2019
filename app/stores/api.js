@@ -9,24 +9,24 @@ const mock = new MockAdapter(api, { delayResponse: 750 });
 
 const getSomeLoremIpsum = () => {
   const output = loremIpsum({
-      count: 2                      // Number of words, sentences, or paragraphs to generate.
-    , units: 'sentences'            // Generate words, sentences, or paragraphs.
-    , sentenceLowerBound: 4         // Minimum words per sentence.
-    , sentenceUpperBound: 14        // Maximum words per sentence.
-    , paragraphLowerBound: 1        // Minimum sentences per paragraph.
-    , paragraphUpperBound: 1        // Maximum sentences per paragraph.
+    count: 2, // Number of words, sentences, or paragraphs to generate.
+    units: 'sentences', // Generate words, sentences, or paragraphs.
+    sentenceLowerBound: 4, // Minimum words per sentence.
+    sentenceUpperBound: 14, // Maximum words per sentence.
+    paragraphLowerBound: 1, // Minimum sentences per paragraph.
+    paragraphUpperBound: 1, // Maximum sentences per paragraph.
   });
   return output;
-}
+};
 
 const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+};
 
 const getRandomDate = () => {
   const now = new Date();
   return new Date(getRandomInt(now.getTime() - 500000000, now.getTime()));
-}
+};
 
 const getInboxItems = () => {
   const inboxItems = [];
@@ -73,7 +73,7 @@ const getInboxItems = () => {
     isNew: false,
   });
   return inboxItems;
-}
+};
 
 // The actual mocks
 
@@ -86,7 +86,7 @@ mock.onGet(/\/messages\/\d+/).reply(config => {
   const inboxItem = getInboxItems().find(i => i.id == id);
   const messages = [];
   for (let i = 0; i < 20; i++) {
-    if (getRandomInt(1,2) === 1) {
+    if (getRandomInt(1, 2) === 1) {
       messages.push({
         id: i,
         userType: 'you',
@@ -95,7 +95,7 @@ mock.onGet(/\/messages\/\d+/).reply(config => {
         user: 'Your Name',
       });
     } else {
-       messages.push({
+      messages.push({
         id: i,
         userType: 'otherPerson',
         text: getSomeLoremIpsum(),
@@ -104,7 +104,7 @@ mock.onGet(/\/messages\/\d+/).reply(config => {
       });
     }
   }
-  
+
   return [200, messages];
 });
 

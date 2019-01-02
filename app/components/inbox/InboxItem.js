@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
     fontSize: 12,
     color: colors.secondaryText,
-  }
+  },
 });
 
 const getContextSensitiveDate = date => {

@@ -20,7 +20,7 @@ export default class CoolStuffScreen extends Component {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);
     this.setState({topBoxHeight: 50});
   }*/
-  
+
   // ANIMATED VERSION
   constructor() {
     super();
@@ -28,9 +28,9 @@ export default class CoolStuffScreen extends Component {
       topBoxHeight: new Animated.Value(50),
       topBoxText: 'This is small',
       bottomBoxText: 'This is big',
-    }
+    };
   }
-  
+
   _makeTopBig = () => {
     this.setState({
       topBoxText: 'This is big',
@@ -39,8 +39,8 @@ export default class CoolStuffScreen extends Component {
     Animated.spring(this.state.topBoxHeight, {
       toValue: 400,
     }).start();
-  }
-  
+  };
+
   _makeTopSmall = () => {
     this.setState({
       topBoxText: 'This is small',
@@ -49,23 +49,26 @@ export default class CoolStuffScreen extends Component {
     Animated.spring(this.state.topBoxHeight, {
       toValue: 50,
     }).start();
-  }
-  
-  render () {
+  };
+
+  render() {
     return (
-      <View style={{ flex: 1}}>
+      <View style={{ flex: 1 }}>
         <TouchableOpacity onPress={this._makeTopBig}>
-          <Animated.View style={{ backgroundColor: 'pink', height: this.state.topBoxHeight, justifyContent: 'center', padding: 10 }}>
-            <Text>
-              {this.state.topBoxText}
-            </Text>
+          <Animated.View
+            style={{
+              backgroundColor: 'pink',
+              height: this.state.topBoxHeight,
+              justifyContent: 'center',
+              padding: 10,
+            }}>
+            <Text>{this.state.topBoxText}</Text>
           </Animated.View>
         </TouchableOpacity>
         <TouchableOpacity onPress={this._makeTopSmall} style={{ flex: 1 }}>
-          <Animated.View style={{ backgroundColor: 'green', flex: 1, justifyContent: 'center', padding: 10 }} >
-            <Text style={{ color: 'white' }}>
-              {this.state.bottomBoxText}
-            </Text>
+          <Animated.View
+            style={{ backgroundColor: 'green', flex: 1, justifyContent: 'center', padding: 10 }}>
+            <Text style={{ color: 'white' }}>{this.state.bottomBoxText}</Text>
           </Animated.View>
         </TouchableOpacity>
       </View>
@@ -75,5 +78,7 @@ export default class CoolStuffScreen extends Component {
 
 CoolStuffScreen.navigationOptions = {
   tabBarLabel: 'Cool Stuff',
-  tabBarIcon: ({ tintColor }) => <MaterialCommunityIcons name="emoticon-cool" size={32} color={tintColor} />,
+  tabBarIcon: ({ tintColor }) => (
+    <MaterialCommunityIcons name="emoticon-cool" size={32} color={tintColor} />
+  ),
 };

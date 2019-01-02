@@ -1,3 +1,3 @@
 import MessageRepository from './MessageRepository';
 
-export { MessageRepository }
+export { MessageRepository };

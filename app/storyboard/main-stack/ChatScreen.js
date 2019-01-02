@@ -10,13 +10,13 @@ export default class ChatScreen extends Component {
     this.state = {
       messages: [],
       isLoading: true,
-    }
+    };
   }
 
   componentDidMount = () => {
     this._refresh();
-  }
-  
+  };
+
   _refresh = () => {
     messageRepository.getMessages(this.props.navigation.state.params.messageId).then(messages => {
       this.setState({
@@ -24,11 +24,11 @@ export default class ChatScreen extends Component {
         isLoading: false,
       });
     });
-  }
-  
+  };
+
   _onSendMessage = message => {
     const messages = this.state.messages;
-    
+
     messages.push({
       id: messages.length,
       userType: 'you',
@@ -39,9 +39,9 @@ export default class ChatScreen extends Component {
     this.setState({
       messages,
     });
-  }
+  };
 
-  render () {
+  render() {
     return (
       <View style={{ flex: 1 }}>
         <LoadingWrapper isLoading={this.state.isLoading}>
