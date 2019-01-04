@@ -1,35 +1,38 @@
-# pittsburgh-techfest-example
-An example React Native/ Expo app
-Demonstrates a simulated inbox/ chat UI along with some other stuff, like navigation.
+# Examples and Presentation for "React Native and Expo: Native Apps without the Native Pain" at CodeMash 2019
 
-## Prerequisites
-* Yarn is installed globally (`npm install -g yarn`)
-* Expo CLI is installed globally (`npm install -g exp`)
-* OR the XDE is installed
-[See Expo.io for info on installing the exp or XDE tools](https://expo.io)
+## Code example
+This is a very basic example app, demonstrating an inbox with a chat interface. Demonstrates navigation, styling, and wiring up to a (fake) API.
 
-## Running from the XDE
-1. In the terminal, run `yarn` to restore dependencies.
-2. Open the project in the XDE
+### Prerequisites for running the example
+* [Node.js](https://nodejs.org/en/) installed
+* [Yarn](https://yarnpkg.com/en/) is installed (you could go without it, of course, but directions assume you have it)
+* Expo CLI is installed globally (`npm install -g expo-cli`)
+* The Expo app is installed on your phone (ignore if you're using the iOS simulator)
+[Also see Expo's directions for getting started](https://expo.io/learn)
 
-## Running on the iOS simulator
-1. In the XDE, click on device, then "iOS Simulator".
+### Starting the bundler for the first time
+1. In the terminal, `cd` to the project directory.
+2. Run `yarn` to restore dependencies.
+3. Run `expo start` to start running the app.
 
-## Running on an Android device
-1. In the XDE, click share.
-2. Open the Expo app on your Android phone.
-3. Scan the QR code in the XDE with your phone.
+### Running the app in the iOS simulator or Android emulator
+1. Once `expo start` kicks off and you see the QR code on the screen and directions for running, press `i` for the iOS simulator or `a`for the Android emulator.
 
-## Running on an iOS device
-1. Create an Expo account on expo.io.
-2. Sign into the account in the XDE and in the Expo app on your phone.
-3. Open the project in the XDE. 
-4. It will show up as a "recent project" in Expo on the phone. Tap on it to run it.
+### Running on an Android device
+1. Open the Expo app on your device.
+2. Go to the projects tab.
+3. Open up the QR code scanner and scan the code that appears in the terminal.
 
-# Expo Snack for same example project
+### Running on an iOS device
+1. Once `expo start` kicks off and you see the QR code on the screen, press `s` to create an account or sign into an existing account.
+2. On the iOS Expo app, sign into the same Expo account.
+3. In the projects tab, you'll see your currently streaming app. Tap on the app and it will start running.
 
-[Expo Snack](https://snack.expo.io/@llamaluvr/pittsburgh-techfest-example)
+## Or just try the Snack
+You can run (almost) the same project in Expo Snack. Just go to the Snack, sign in/ create an Expo account, press the Share button in Snack, and follow the directions from there.
+
+[Expo Snack](https://snack.expo.io/@llamaluvr/codemash-2019-example)
 
 # Presentation
 
-[June 2nd Presentation](https://docs.google.com/presentation/d/1HT0eidAC0_qj3hS3AS_19TuXBa3_zQlfWe5ePBARMw8/edit?usp=sharing)
+Coming soon!
