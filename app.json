@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "pittsburgh-techfest-example",
+    "name": "React Native Expo CodeMash 2019 Example",
     "description": "No description",
-    "slug": "pittsburgh-techfest-exmaple",
+    "slug": "rn-expo-codemash-2019",
     "privacy": "unlisted",
     "sdkVersion": "31.0.0",
     "version": "1.0.0",
@@ -27,7 +27,7 @@
         "usesNonExemptEncryption": false
       },
       "supportsTablet": false,
-      "bundleIdentifier": "com.keith.pittsburghtechfestexample"
+      "bundleIdentifier": "com.keith.rnexpocodemash"
     },
     "android": {
       "versionCode": 1,
@@ -37,7 +37,7 @@
         "WRITE_EXTERNAL_STORAGE",
         "READ_EXTERNAL_STORAGE"
       ],
-      "package": "com.keith.pittsburghtechfestexample"
+      "package": "com.keith.rnexpocodemash"
     }
   }
 }
