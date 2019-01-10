@@ -33,6 +33,12 @@ You can run (almost) the same project in Expo Snack. Just go to the Snack, sign 
 
 [Expo Snack](https://snack.expo.io/@llamaluvr/codemash-2019-example)
 
+## Android users can run the app directly from the Expo publish link
+
+If you have Expo installed, this link will take you directly into Expo, running the demo app!
+
+[Example published to Expo](https://exp.host/@llamaluvr/rn-expo-codemash-2019)
+
 # Presentation
 
 [Here's the slides!](https://docs.google.com/presentation/d/13ZctjaC89HC1IG78lY7ijyiU4KFQ00BZDR-AN97wAfk/edit?usp=sharing)
