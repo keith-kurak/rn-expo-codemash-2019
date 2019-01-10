@@ -4,6 +4,11 @@ import { Feather } from '@expo/vector-icons';
 import Inbox from '../../../components/inbox';
 import { messageRepository } from '../../../stores/instances';
 
+/**
+ * The tab on the MainTabs navigator that shows the inbox.
+ * An example of the "screen/ container" pattern, where
+ * data is wired up to UI components.
+ */
 export default class InboxScreen extends Component {
   constructor() {
     super();

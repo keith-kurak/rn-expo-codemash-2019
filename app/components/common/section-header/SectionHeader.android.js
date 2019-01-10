@@ -5,6 +5,7 @@ import Styles from './Styles'; // Version can be specified in package.json
 
 /**
  * A section header within a table.
+ * Has lowercase letters like material design section headers.
  */
 const SectionHeader = ({ title, style }) => (
   <View style={[title.length ? Styles.sectionHeader : Styles.emptySectionHeader, style]}>

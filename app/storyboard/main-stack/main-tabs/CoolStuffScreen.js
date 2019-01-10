@@ -1,26 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, Animated, LayoutAnimation } from 'react-native';
+import { View, Text, TouchableOpacity, Animated } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
+/**
+ * A screen that is showing off a very basic animation.
+ */
 export default class CoolStuffScreen extends Component {
-  // NOT ANIMATED VERSION
-  /*constructor() {
-    super();
-    this.state = {
-      topBoxHeight: 50,
-    }
-  }
-  
-  _makeTopBig = () => {
-    LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);
-    this.setState({topBoxHeight: 400});
-  }
-  
-  _makeTopSmall = () => {
-    LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);
-    this.setState({topBoxHeight: 50});
-  }*/
-
   // ANIMATED VERSION
   constructor() {
     super();

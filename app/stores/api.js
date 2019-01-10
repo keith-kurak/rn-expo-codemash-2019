@@ -2,6 +2,11 @@ import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 import loremIpsum from 'lorem-ipsum-react-native';
 
+/**
+ * This is the wiring up of a fake API using Axios Mock Adapter.
+ * Didn't really have to do this, but it's fun.
+ */
+
 const api = axios.create({
   baseURL: `http://localhost:8080`,
 });

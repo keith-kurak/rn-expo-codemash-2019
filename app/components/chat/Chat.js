@@ -6,6 +6,10 @@ import { GiftedChat } from 'react-native-gifted-chat';
 import KeyboardSpacer from 'react-native-keyboard-spacer';
 import { LoadingWrapper } from '../common';
 
+/**
+ * An example of using GiftedChat, a pretty great chat UI
+ * for React Native. I use this in prod code!
+ */
 class Chat extends Component {
   _onSendMessage = message => {
     this.props.onSendMessage(message[0].text);

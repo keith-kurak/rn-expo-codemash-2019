@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MaterialInitials from 'react-native-material-initials/native';
 
+/**
+ * One of those fancy circular thumbnails that appears with the
+ * user's initials when they don't have an actual avatar.
+ */
 const Thumbnail = ({ diameter, name }) => {
   const colors = [
     '#1abc9c',
@@ -24,6 +28,8 @@ const Thumbnail = ({ diameter, name }) => {
     '#bdc3c7',
     '#7f8c8d',
   ];
+  // change the colors based on running their name through
+  // some math
   const charIndex = name.charCodeAt(0) - 65;
   const colorIndex = charIndex % 19;
   return (

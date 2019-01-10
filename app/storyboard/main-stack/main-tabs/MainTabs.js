@@ -3,6 +3,10 @@ import InboxScreen from './InboxScreen';
 import SettingsScreen from './SettingsScreen';
 import CoolStuffScreen from './CoolStuffScreen';
 
+/**
+ * Navigator/ routes for the tabs.
+ * Sets up each tab and the title for each tab
+ */
 const MainTabs = createBottomTabNavigator(
   {
     inbox: { screen: InboxScreen },

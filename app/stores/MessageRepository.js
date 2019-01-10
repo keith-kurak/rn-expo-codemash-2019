@@ -1,3 +1,6 @@
+/**
+ * Just a class that provides a clean interface for getting data.
+ */
 export default class MessageRepository {
   _api;
 

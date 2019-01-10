@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
+/**
+ * Just a placeholder so we could have three tabs,
+ * because two tabs would look a bit sparse.
+ */
 export default class SettingsScreen extends Component {
   render() {
     return (

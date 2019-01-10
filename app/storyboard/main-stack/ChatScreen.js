@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
-import { View, Alert } from 'react-native';
+import { View } from 'react-native';
 import Chat from '../../components/chat';
 import { LoadingWrapper } from '../../components/common';
 import { messageRepository } from '../../stores/instances';
 
+/**
+ * A child screen to be pushed onto the stack when an inbox
+ * item is tapped.
+ * Shows the chat window.
+ * This screen component loads just the messages for the current chat
+ * based on the navigation params and passes them along to the
+ * Chat UI component.
+ */
 export default class ChatScreen extends Component {
   constructor() {
     super();
