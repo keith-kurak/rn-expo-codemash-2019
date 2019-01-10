@@ -35,4 +35,4 @@ You can run (almost) the same project in Expo Snack. Just go to the Snack, sign 
 
 # Presentation
 
-Coming soon!
+[Here's the slides!](https://docs.google.com/presentation/d/13ZctjaC89HC1IG78lY7ijyiU4KFQ00BZDR-AN97wAfk/edit?usp=sharing)
